@@ -108,7 +108,7 @@ onMounted(() => {
     }
 
     .countdown-label {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
 }
 </style>
