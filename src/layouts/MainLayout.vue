@@ -2,7 +2,8 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar class="bg-lightnude">
-        <q-btn v-if="$q.screen.width < 600" flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
+        <q-btn v-if="$q.screen.width < 600" style="color: brown;" flat dense round icon="menu" aria-label="Menu"
+          @click="toggleLeftDrawer" />
         <q-space />
         <div v-if="$q.screen.width >= 600" style="color: brown;">
           <q-btn v-for="item in menuItems" :key="item.label" flat :label="item.label" @click="goTo(item.route)" />
