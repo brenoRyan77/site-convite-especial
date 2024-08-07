@@ -10,7 +10,7 @@
         <q-space />
       </q-toolbar>
     </q-header>
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered side="left" overlay>
+    <q-drawer v-if="$q.screen.width < 600" v-model="leftDrawerOpen" show-if-above bordered side="left" overlay>
       <q-list>
         <q-item-label header>
           Menu
