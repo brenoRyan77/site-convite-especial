@@ -1,15 +1,13 @@
 <template>
-    <q-page class="q-pa-md">
-        <div class="text-center q-mb-md">
-            <h6 class="q-mb-md title">Contagem Regressiva</h6>
-            <div class="countdown-container">
-                <div v-for="(item, index) in countdownItems" :key="index" class="countdown-box">
-                    <div class="countdown-value">{{ item.value }}</div>
-                    <div class="countdown-label">{{ item.label }}</div>
-                </div>
+    <div class="text-center bg-lightnude" style="width: 100%; height: 250px;">
+        <h6 class="q-mb-md title">Contagem Regressiva</h6>
+        <div class="countdown-container">
+            <div v-for="(item, index) in countdownItems" :key="index" class="countdown-box">
+                <div class="countdown-value">{{ item.value }}</div>
+                <div class="countdown-label">{{ item.label }}</div>
             </div>
         </div>
-    </q-page>
+    </div>
 </template>
 
 <script setup>
@@ -72,6 +70,7 @@ onMounted(() => {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .countdown-box {
@@ -79,14 +78,14 @@ onMounted(() => {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
     background-color: black;
     color: white;
     font-size: 2rem;
     border-radius: 0.5rem;
     position: relative;
-    padding: 0.5rem;
+    padding: 2rem;
 }
 
 .countdown-value {
