@@ -19,7 +19,11 @@
                     </div>
                 </div>
             </div>
-            <q-btn label="Ver Carrinho" @click="showCartModal = true" color="primary" class="q-mt-md" />
+            <q-btn @click="showCartModal = true" color="primary" class="q-mt-md q-position-relative">
+                <q-icon name="shopping_cart" size="sm" />
+                <q-badge :label="cart.length" color="negative" class="q-mr-xs" />
+                Ver Carrinho
+            </q-btn>
             <Carrinhoitem :show="showCartModal" @close="showCartModal = false" />
         </div>
     </q-page>
@@ -62,6 +66,11 @@ const addToCart = (present) => {
         position: 'top-right'
     })
 }
+
+const cart = ref(cartStore.cart)
+cartStore.$subscribe((mutation, state) => {
+    cart.value = state.cart
+})
 </script>
 
 <style scoped></style>

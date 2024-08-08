@@ -39,7 +39,7 @@ const router = useRouter()
 const leftDrawerOpen = ref(false)
 
 const menuItems = [
-  { label: 'Início', route: 'inicio' },
+  { label: 'Início', route: 'home' },
   { label: 'Nossa História', route: 'nossa-historia' },
   { label: 'Lista de Presentes', route: 'lista-de-presentes' },
   { label: 'Recados', route: 'recados' }

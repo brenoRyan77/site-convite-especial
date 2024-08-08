@@ -26,8 +26,8 @@
                 </div>
             </q-card-section>
             <q-card-actions class="q-pa-sm flex justify-between">
-                <q-btn flat label="Finalizar Compra" @click="finalizePurchase" color="secondary" class="q-mr-md" />
                 <q-btn flat label="Fechar" @click="closeModal" color="primary" />
+                <q-btn flat label="Finalizar Compra" @click="finalizePurchase" color="secondary" class="q-mr-md" />
             </q-card-actions>
         </q-card>
     </q-dialog>
