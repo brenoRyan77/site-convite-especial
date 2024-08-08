@@ -2,3 +2,122 @@
   --tw-bg-opacity: 1;
   background-color: rgb(255 244 239 / var(--tw-bg-opacity));
 }
+
+/* Modal */
+.modal-card {
+  max-width: 80vw;
+  width: 700px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: brown;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cart-item-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cart-item-name {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.cart-item-price {
+  font-size: 0.7rem;
+  color: #666;
+}
+
+.item-container {
+  padding: 8px;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.total-label {
+  color: #333;
+}
+
+.total-value {
+  color: #007bff;
+}
+
+.q-card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.q-card-actions .q-btn {
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+/* Lista Presentes */
+
+.title-font {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.description-font {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.scrollable-container {
+  max-height: 80vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.present-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 1rem;
+  height: 100%;
+  margin-left: 1rem;
+}
+
+.present-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.present-details {
+  margin-top: 0.5rem;
+}
+
+.present-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.present-price {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
